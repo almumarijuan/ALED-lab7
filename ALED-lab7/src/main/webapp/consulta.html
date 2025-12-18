@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Gestión Hospitalaria</title> 
+  <link rel="stylesheet" type="text/css" href="estilos.css">
+  <link rel="stylesheet" media="only screen and (max-width: 480px)" href="smartphone.css">
+</head> 
+
+<body>
+  <header>
+    <table>
+      <tr>
+        <td><img src="logo.png"></img></td>
+        <td><h1>Gestión hospitalaria</h1></td> 
+      </tr>
+    </table>
+  </header>
+
+  <nav class="main" id="n1">
+    <a href="index.html">Inicio</a>
+    <a href="alta">Alta</a>
+    <a href="baja">Baja</a>
+    <a href="consulta">Consulta</a>
+  </nav>
+
+  <section class="main" id="s1">
+    <h1>Consulta</h1>
+    <h2></h2>
+
+    <form name="formulario" action="consulta" method="POST">
+      <table>
+        <tr>
+          <td>DNI del paciente:</td>
+          <td><input type="text" name="dni"></td>
+        </tr>
+        <tr>
+          <td>Número de historia clínica:</td>
+          <td><input type="text" name="nhc"></td>
+        </tr>
+        <tr>
+          <td>Fecha de consulta:</td>
+          <td><input type="date" name="fecha"></td>
+        </tr>
+        <tr>
+          <td>Especialidad:</td>
+          <td>
+            <select name="especialidad">
+              <option value="">-- Seleccionar --</option>
+              <option value="medicina">Medicina general</option>
+              <option value="cardiologia">Cardiología</option>
+              <option value="traumatologia">Traumatología</option>
+              <option value="pediatria">Pediatría</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="submit" name="enviar" value="Consultar"></td>
+        </tr>
+      </table>
+    </form>
+  </section>
+</body> 
+</html>
